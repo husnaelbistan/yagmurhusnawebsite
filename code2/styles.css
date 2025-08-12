@@ -1,0 +1,296 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #09790f;
+    color: white;
+}
+.logo {
+    width: 70px;
+}
+
+/* MENÜ */
+nav {
+    background-color: #7a4b03;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+nav a:hover {
+    background-color: #2e7d32;
+    border-radius: 5px;
+}
+
+/* GENEL SECTIONS */
+section {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* FİKİR KARTLARI */
+.ideas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+.idea-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.idea-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.idea-card button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.idea-card button:hover {
+    background-color: #388e3c;
+}
+
+/* FORM ALANI */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-section input, .form-section textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+.form-section button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-section button:hover {
+    background-color: #1b5e20;
+}
+
+/* DESTEK ALANI */
+.support {
+    text-align: center;
+}
+.support button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.support button:hover {
+    background-color: #ef6c00;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2e7d32;
+    color: white;
+    margin-top: 20px;
+}
+<!DOCTYPE html><html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sıkça Sorulan Sorular</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    padding: 20px;
+}
+.faq-container {
+    max-width: 700px;
+    margin: auto;
+}
+.faq-item {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.faq-question {
+    padding: 15px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+.faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+.faq-question.active::after {
+    transform: rotate(45deg);
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background: #ffffff;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+.faq-answer p {
+    margin: 10px 0;
+}
+.faq-answer.show {
+    padding: 15px;
+}</style>
+
+#auth {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  background: #f0f4f1;
+}
+
+.form-container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.form-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-container button {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.form-container button:hover {
+  background: #1b5e20;
+}body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Buton Tasarımı */
+#toggleFormBtn {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#toggleFormBtn:hover {
+    background-color: #256d45;
+}
+
+/* Popup Form */
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 300px;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-form h2 {
+    margin-bottom: 10px;
+}
+
+.popup-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.popup-form button {
+    width: 100%;
+    padding: 8px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.popup-form button:hover {
+    background-color: #256d45;
+}
+
+/* Kapatma Butonu */
+#closeBtn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
+
+#closeBtn:hover {
+    color: black;
+}
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8"> 
+
+</section>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sürdürülebilirlik Platformu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Üst Başlık -->
+    <header>
+        <img src="logo.png" alt="Sürdürülebilirlik Logo" class="logo">
+        <h1>🌱 Sürdürülebilirlik Fikirleri</h1>
+        <p>Paylaş | Destek Ol | Birlikte Değiştirelim!</p>
+    </header>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Menü -->
+    <nav>
+        <a href="#anasayfa">Ana Sayfa</a>
+        <a href="#fikirler">Fikirler</a>
+        <a href="#destek">Destek Ol</a>
+        <a href="#etkinlikler">Etkinlikler
+                    <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#ekibimiz">Ekibimiz</a>
+    </nav>
+ </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="toggleFormBtn">Kayıt / Giriş</button>
+
+    <div class="popup-form" id="popupForm">
+        <span id="closeBtn">&times;</span>
+        <h2>Kayıt Ol</h2>
+        <form>
+            <input type="text" placeholder="Adınız" required>
+            <input type="email" placeholder="E-posta" required>
+            <input type="password" placeholder="Şifre" required>
+            <button type="submit">Kayıt Ol</button>
+        </form>
+        <hr>
+        <h2>Giriş Yap</h2>
+        <form>
+            <input type="email" placeholder="E-posta" required>
+            <input type="password" placeholder="Şifre" required>
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </d class="auth-container">
+    <button class="toggle-btn" onclick="toggleAuth()">Kayıt Ol / Giriş Yap</button>
+    
+    <div id="auth-form" class="auth-form hidden">
+        <h2>Giriş / Kayıt</h2>
+        <input type="text" placeholder="Kullanıcı Adı" required>
+        <input type="password" placeholder="Şifre" required>
+        <button class="submit-btn">Giriş Yap</button>
+        <p class="register-link">Hesabınız yok mu? <a href="#">Kayıt Olun</a></p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    <!-- Hoşgeldiniz Alanı -->
+    <section id="anasayfa" class="intro">
+        <h2>Hoş Geldiniz 💚</h2>
+        <p></p>Geleceği Birlikte İnşa Ediyoruz
+Burada yalnızca fikir değil, geleceğin temelleri atılıyor.
+Sürdürülebilir bir dünya için her ses önemli, her katkı değerli.
+Sen de değişimin bir parçası ol!
+    </section>
+
+    <!-- Fikir Ekleme Formu -->
+    <section id="fikirEkle" class="form-section">
+        <h2>💡 Fikrini Paylaş</h2>
+        <form>
+            <input type="text" placeholder="Fikir başlığı" required>
+            <textarea placeholder="Fikir detaylarını buraya yaz..." required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+
+    <!-- Fikirler Listesi -->
+    <section id="fikirler" class="ideas">
+        <h2>Popüler Fikirler</h2>
+        <div class="idea-card">
+            <img src="recycle.jpg" alt="Geri Dönüşüm">
+            <h3>Geri Dönüşüm Atölyesi</h3>
+            <p>Plastik atıkları sanata dönüştüren haftalık atölyeler düzenliyoruz.</p>
+            <button>Destek Ol</button>
+        </div>
+        <div class="idea-card">
+            <img src="tree.jpg" alt="Fidan Dikimi">
+            <h3>Fidan Dikim Kampanyası</h3>
+            <p>Her ay topluca fidan dikiyoruz. Katılmak ister misin?</p>
+            <button>Destek Ol</button>
+        </div>
+        <div class="idea-card">
+            <img src="solar.jpg" alt="Güneş Paneli">
+            <h3>Güneş Enerjisi Okullara</h3>
+            <p>Okullara güneş paneli kurulum projesi başlatıyoruz.</p>
+            <button>Destek Ol</button>
+        </div>
+    </section>
+<!DOCTYPE html>
+<html lang="tr">
+<head><h2>❓ Sıkça Sorulan Sorular</h2>
+<div class="faq-container">
+
+    <div class="faq-item">
+        <div class="faq-question">Bu platform ne işe yarıyor?</div>
+        <div class="faq-answer"><p>Platformumuz, sürdürülebilirlik fikirlerini paylaşabileceğiniz ve hayata geçirebileceğiniz bir topluluk alanıdır.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Nasıl üye olabilirim?</div>
+        <div class="faq-answer"><p>Ana sayfadaki "Kayıt Ol" butonuna tıklayarak birkaç adımda kolayca üye olabilirsiniz.</p></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Fikrimi paylaştıktan sonra ne olur?</div>
+        <div class="faq-answer"><p>Fikriniz topluluk tarafından görülür, destek alır ve uygulanması için gönüllülerle buluşturulur.</p></div>
+    </div>
+
+</div>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('active');
+        const answer = question.nextElementSibling;
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+            answer.classList.remove("show");
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            answer.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+<meta charset="UTF-8" /> 
+
+    <!-- Destek Ol Alanı -->
+    <section id="destek" class="support">
+        <h2>💖 Destek Ol</h2>
+        <p>Projelerimize bağış yapabilir, gönüllü olabilir veya fikir paylaşabilirsiniz.</p>
+        <button>Bağış Yap</button>
+        <button>Gönüllü Ol</button>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="hakkimizda" class="about">
+        <h2>🌍 Hakkımızda</h2>
+        </section>Sürdürülebilirlik Fikirleri Platformu, çevreyi, toplumu ve geleceği korumak isteyenlerin bir araya geldiği bir buluşma alanıdır. Amacımız, sürdürülebilir çözümler geliştiren herkesin fikirlerini paylaşabileceği, destek bulabileceği ve birlikte büyüyebileceği samimi bir ortam yaratmaktır.
+
+        Her fikrin gücüne inanıyor, farklı bakış açılarıyla daha güçlü bir topluluk oluşturmayı hedefliyoruz. Gelin, birlikte daha yaşanabilir bir dünya için düşünelim, üretelim ve paylaşım.
+    
+    </footer><section <section id="ekibimiz" class="team-section">
+  <h2>🎀Takım Üyeleri</h2>
+  <div class="team-container">
+    <div class="team-member">
+      
+      <h3>Yağmur Kayra Ural</h3>
+    </div>
+    <div class="team-member">
+    
+      <h3>Hüsna Elbistan</h3>
+
+    </div>
+  
+<!-- Alt Bilgi -->
+    <footer>
+        <p>© 2025 Sürdürülebilirlik Platformu | Hep Birlikte Daha Yeşil Bir Dünya</p>
+
+  </div>
+</section>
+</body>
+</html>
